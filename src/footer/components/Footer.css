@@ -1,0 +1,42 @@
+/* Estilos del footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con opacidad */
+    color: #353640;
+    padding: 20px 0;
+    flex-shrink: 0;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior */
+  
+    /* Posicionamiento en la parte inferior */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left !important
+}
+  
+.social-icons li {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #a0a5b8;
+    transition: color 0.3s ease;
+}
+  
+.social-icons a:hover {
+    color: #adb5bd;
+}
+  
+.rights {
+    font-size: 0.8rem;
+    color: #a0a5b8;
+    /*font-family: Garamond, serif;*/
+}
