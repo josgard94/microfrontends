@@ -1,0 +1,36 @@
+/* components/Login.css */
+.login-background {
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    width: 100%;
+  }
+  
+  /* Centrar los botones de inicio de sesión social */
+  .login-social-buttons > * {
+    width: 100%;
+  }
+  
