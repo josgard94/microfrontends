@@ -1,16 +1,22 @@
 // main.js
-import { registerApplication, start } from 'single-spa';
+import { registerApplication, start } from "single-spa";
 
 registerApplication(
-  'mi-microfrontend', // Nombre único para tu microfrontend
-  () => import('./src/login/main.app.js'), // Ruta relativa al archivo que contiene tu aplicación
-  () => location.pathname === "/" ? true : false // Función para determinar cuándo cargar tu microfrontend
+  "mf-login",
+  () => import("./src/login/main.app.js"), 
+  (location) => (location.pathname === "/" ? true : false) 
 );
 
 registerApplication(
-  'footer',
-  () => import('./src/footer/main.app.js'), 
-  () => location.pathname === "/" ? true : false
+  "footer",
+  () => import("./src/footer/main.app.js"),
+  () => true
+);
+
+registerApplication(
+  "mf-gallery",
+  () => import("./src/gallery-cats/vue.app.js"),
+  () => location.pathname === "/cats" ? true: false
 )
 
 start();
