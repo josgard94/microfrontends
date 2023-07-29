@@ -1,15 +1,14 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './Login.css'; // Importa el archivo de estilos
+
+import './Login.css';
 
 const Login = () => {
-  // Función para manejar el envío del formulario
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aquí puedes implementar la lógica de inicio de sesión
-    // Por ahora, solo mostraremos un mensaje de inicio de sesión exitoso en la consola
-    console.log('Inicio de sesión exitoso');
-  };
+    window.location.assign('/cats');
+  }
 
   return (
     <div className="d-flex justify-content-center align-items-center login-background">
@@ -29,7 +28,7 @@ const Login = () => {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <Button variant="primary" type="submit" className="login-button">
-            Submit
+            Login
           </Button>
         </Form>
       </div>
