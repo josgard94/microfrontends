@@ -1,5 +1,5 @@
 # microfrontends
-Example App with Microfrontends in React and Single-SPA 🚀
+Example App with Microfrontends in React, Vue and Single-SPA 🚀
 
 This is a sample project that demonstrates how to build a modular and scalable web application using Microfrontends architecture with React and Single-SPA.
 
